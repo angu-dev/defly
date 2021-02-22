@@ -248,18 +248,18 @@ This can be used to generate sliders. In order to function correctly, splide-2.4
 
 ```html
 <div id="testSlider" data-default="slider" data-slider="sync" style="width:100vw;" data-slider-options="{'type':'slide','direction':'ltr','fixedHeight':'49%','rewind':'true','autoplay':'true','interval':'1000'}" data-slider-arrow-style="rounded" data-slider-pagination-style="rounded">
-	<div data-slider="item">
-		<div style="background-color:red;height:100%;">1</div>
-	</div>
-	<div data-slider="item">
-		<div style="background-color:blue;height:100%;">2</div>
-	</div>
-	<div data-slider="item">
-		<div style="background-color:green;height:100%;">3</div>
-	</div>
-	<div data-slider="item">
-		<div style="background-color:yellow;height:100%;">4</div>
-	</div>
+   <div data-slider="item">
+      <div style="background-color:red;height:100%;">1</div>
+   </div>
+   <div data-slider="item">
+      <div style="background-color:blue;height:100%;">2</div>
+   </div>
+   <div data-slider="item">
+      <div style="background-color:green;height:100%;">3</div>
+   </div>
+   <div data-slider="item">
+      <div style="background-color:yellow;height:100%;">4</div>
+   </div>
 </div>
 ```
 ---
@@ -290,14 +290,14 @@ Allows a filter to be generated. A filter element is created for each specified 
 
 ```html
 <div data-default="filter" data-filter-position="top">
-	<div data-filter="item" data-filter-categorie=""></div>
-	<div data-filter="item" data-filter-categorie="test2"></div>
-	<div data-filter="item" data-filter-categorie="test3"></div>
-	<div data-filter="item"></div>
-	<div data-filter="item" data-filter-categorie="test3"></div>
-	<div data-filter="item" data-filter-categorie="test5"></div>
-	<div data-filter="item" data-filter-categorie="test6"></div>
-	<div data-filter="item" data-filter-categorie="test7"></div>
+   <div data-filter="item" data-filter-categorie=""></div>
+   <div data-filter="item" data-filter-categorie="test2"></div>
+   <div data-filter="item" data-filter-categorie="test3"></div>
+   <div data-filter="item"></div>
+   <div data-filter="item" data-filter-categorie="test3"></div>
+   <div data-filter="item" data-filter-categorie="test5"></div>
+   <div data-filter="item" data-filter-categorie="test6"></div>
+   <div data-filter="item" data-filter-categorie="test7"></div>
 </div>
 ```
 ---
@@ -313,8 +313,8 @@ This can be used to place banners. If several are created, they are positioned d
 
 ```html
 <div data-default="banner" data-banner-position="top">
-	<button data-banner="close"></button>
-	<p>test</p>
+   <button data-banner="close"></button>
+   <p>test</p>
 </div>
 ```
 ---
@@ -328,7 +328,7 @@ This can be used to create information overlays. These are briefly visible on th
 
 ```html
 <div data-default="info">
-	<p>Text</p>
+   <p>Text</p>
 </div>
 ```
 ---
@@ -390,20 +390,20 @@ This can be used to create time stamps.
 
 ```html
 <div data-default="period" data-period-start="path" data-period-end="point" style="width:800px;">
-	<div data-period="stamp" data-period-position="left">
-		<p data-period="date">04.01.2323</p>
-		<h1 data-period="heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, asperiores.</h1>
-		<div data-period="content"></div>
-	</div>
-	<div data-period="stamp" data-period-position="right">
-		<p data-period="date">04.02.2323</p>
-		<h3 data-period="heading">head3</h3>
-	</div>
-	<div data-period="stamp">
-		<p data-period="date">04.02.2323</p>
-		<h3 data-period="heading">head</h3>
-		<div data-period="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, asperiores.</div>
-	</div>
+   <div data-period="stamp" data-period-position="left">
+      <p data-period="date">04.01.2323</p>
+      <h1 data-period="heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, asperiores.</h1>
+      <div data-period="content"></div>
+   </div>
+   <div data-period="stamp" data-period-position="right">
+      <p data-period="date">04.02.2323</p>
+      <h3 data-period="heading">head3</h3>
+   </div>
+   <div data-period="stamp">
+      <p data-period="date">04.02.2323</p>
+      <h3 data-period="heading">head</h3>
+      <div data-period="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, asperiores.</div>
+   </div>
 </div>
 ```
 ---
@@ -420,16 +420,16 @@ This can be used to create a navigation. It is only possible to create a navigat
 
 ```html
 <nav data-default="navigation" data-navigation-type="fixed" data-navigation-work="fade">
-	<div data-navigation="logo">
-		<div style="background:var(--default-light);height:100%;width:200px;"></div>
-	</div>
-	<div data-navigation="items">
-		<a href="#">Home</a>
-		<a href="#">About me</a>
-		<a href="#">test1</a>
-		<a href="#">test2</a>
-		<a href="#">test3</a>
-	</div>
+   <div data-navigation="logo">
+      <div style="background:var(--default-light);height:100%;width:200px;"></div>
+   </div>
+   <div data-navigation="items">
+      <a href="#">Home</a>
+      <a href="#">About me</a>
+      <a href="#">test1</a>
+      <a href="#">test2</a>
+      <a href="#">test3</a>
+   </div>
 </nav>
 ```
 ---
@@ -444,22 +444,22 @@ This can be used to create a footer. With another footer element within the foot
 
 ```html
 <footer data-default="footer">
-	<div data-footer="content">
-		<p>test</p>
-		<div>
-			<p>text</p>
-		</div>
-		<ul>
-			<li>test</li>
-			<li>test</li>
-			<li>test</li>
-		</ul>
-	</div>
-	<footer>
-		<a href="#">Impressum</a>
-		<a href="#">Datenschutz</a>
-		<a href="#">test</a>
-	</footer>
+   <div data-footer="content">
+      <p>test</p>
+      <div>
+      	 <p>text</p>
+      </div>
+      <ul>
+      	 <li>test</li>
+      	 <li>test</li>
+      	 <li>test</li>
+      </ul>
+   </div>
+   <footer>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">test</a>
+   </footer>
 </footer>
 ```
 ---
