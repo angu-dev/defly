@@ -1,9 +1,9 @@
 
-## Allgemein:
-In dieser Dokumentation werden sie sämtliche Informationen erhalten, welche für das Git defly relevant sind.
-Das Projekt defly ist eine Bibliothek, welche es Ihnen erlaubt, über HTML-Elemente direkt voll funktionsfähige Websiten zu generieren.
+## General:
+In this documentation you will get all the infromatione needed which are relevant for the Git defly.
+The defly project is a library that allows you to generate fully functional websites using HTML elements.
 
-Unter anderem können Sie folgende Elemente erstellen:
+Among other things, you can create the following elements:
 * Navigation
 * Footer
 * Slider
@@ -24,63 +24,62 @@ Unter anderem können Sie folgende Elemente erstellen:
 * Period
 * Section
 
-## Branchen:
+## Branches:
 **main:** 
-Hier finden Sie minified Code der jeweilig neusten Version.
+Here you will find the minified code of the latest version.
 
 **dev:**
-Hier finden Sie den originalen Code der jeweils neusten Version.
+Here you will find the original code of the latest version.
 
-## Dateien:
-Um diese Bibliothek korrekt nutzen zu können, sollten Sie jeweils überprüfen, welche Erweiterung für welches Element notwendig ist.
+## Files:
+In order to be able to use this library correctly, you should check which extension is necessary for which element.
 
-Grundsätzlich funktioniert defly nur korrekt, wenn folgende Dateien eingebunden wurden:
-
+Basically, defly only works correctly if the following files have been integrated:
 -   fontawesome.min.css
 -   jquery-3.5.1.min.js
 -   Fonts (Kompletter Ordner)
 -   default-script.js
 -   default-style.css
 
-Falls weitere Dateien benötigt werden, binden Sie diese einfach ein. Die benötigten Dateien finden Sie alle im “Additional”-Ordner. Welche Dateien jeweils genau fehlen, finden Sie entweder in dieser Dokumentation oder bei der Benutzung der Elemente als Fehler in der Konsole.
+If further files are required, simply integrate them. You can find the files you need in the “Additional” folder. Which files are missing in each case can be found either in this documentation or when using the elements as errors in the console.
 
-**"Fonts"-Order:**
-Dieser Ordner enthält sämtliche Schfitarten, welche von fontawesome oder als Standardschriftart benutzt werden.
+**"Fonts"-Folder:**
+This folder contains all fonts that are used by fontawesome or as standard fonts.
 
-**"Additional"-Ordner:**
-Hier finden Sie alle externen Bibliotheken, welche für defly notwendig sein könnten. 
+**"Additional"-Folder:**
+Here you will find all external libraries that could be necessary for defly.
 
-+ **"fontawesome.min.css"-Datei:**
-	Diese Datei enthält das genutze fontawesome-Styling.
++ **"fontawesome.min.css"-File:**
+	This file contains the fontawesome styling.
 	
-+ **"jquery-3.5.1.min.js"-Datei;**
-	Hier ist der Code der jQuery-Bibliothek enthalten. Diese Datei ist zwingend notwendig um defly zu nutzen.
++ **"jquery-3.5.1.min.js"-File;**
+	The code from the jQuery library is included here. This file is absolutely necessary to use defly.
 	
-+ **"popper-2.6.0.js"-Datei:**
-	Diese Bibliothek beinhaltet Logik um benutzerdefinierte Tooltips zu erstellen.
++ **"popper-2.6.0.js"-File:**
+	This library contains logic to create custom tooltips.
 	
-+ **"splide-2.4.20.css"-Datei:**
-	Hier finden Sie gewisse Styling-Einstellungen für Slider, aus einer externen Bibliothek.
++ **"splide-2.4.20.css"-File:**
+	Here you will find certain styling settings for sliders from an external library.
 	
-+ **"splide-2.4.20.js"-Datei:**
-	Hierbei handelt es sich um eine JavaScript-Datei, welche die Logik benutzerdeinierten Slidern besitzt.
++ **"splide-2.4.20.js"-File:**
+	This is a JavaScript file that has the logic of user-defined sliders.
 
-**"default-script.js"-Datei:**
-Diese Datei enthält den großteil der Logik des Projektes. Hier finden Sie den kompletten JavaScript-Teil.
+**"default-script.js"-File:**
+This file contains most of the logic of the project. You can find the complete JavaScript section here.
 
-**"default-style.css"-Datei:**
-Hier sind sämtliche Design-Einstellungen enthalten. Jedes Generierbare Element hat ein Default-Style, welches jederzeit überarbeit werden kann.
+**"default-style.css"-File:**
+All design settings are included here. Each element that can be generated has a default style that can be revised at any time.
 
 ## Erklärung:
-Hier finden Sie alle notwendigen Informationen über alle, in defly beinhaltete, Elemente.
+Here you will find all the necessary information about each item included in defly.
 
 **Select**
-Ist der Browser nicht Safari oder Google Chrome (Mobile), dann können Sie dieses Element erstellen. Wenn ein darin enthaltenes Option-Element das value -1 besitzt, ist dieser ein Placeholder.  
+If the browser is not Safari or Google Chrome (Mobile), you can create this element. If an option element contained therein has the value -1, this is a placeholder.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |---|---|---|
-|data-default|select|Triggert Funktionalität|
-|data-select-index|integer|Option-Element auswählen, welches Standardmäßig ausgewählt ist|
+|data-default|select|Triggers functionality|
+|data-select-index|integer|Select option element which is selected by default|
 
 ```html
 <select data-default="select"> <!-- data-select-index="2" -->
@@ -93,25 +92,27 @@ Ist der Browser nicht Safari oder Google Chrome (Mobile), dann können Sie diese
 ```
 ---
 **Checkbox**
-Hiermit können Sie eine anpassbare Checkbox erstellen. 
-|Attribut|Werte|Beschreibung|
+This allows you to create a customizable checkbox.
+
+|Attribute|Values|Description|
 |---|---|---|
-|data-default|checkbox|Triggert Funktionalität|
+|data-default|checkbox|Triggers functionality|
+
 ```html
 <input type="checkbox" data-default="checkbox">
 ```
 ---
 **Fullview**
-Hiermit können Sie Bilder größer anzeigen lassen. Es ist möglich, diese Funktion auf IMG- oder DIV-Elementen zu nutzen. Bei DIV-Elementen muss das Bild als background-image angegeben sein.
+This allows you to display images larger. It is possible to use this function on IMG or DIV elements. In the case of DIV elements, the image must be specified as a background image.
 
-|Typ|Attribut|Werte|Beschreibung|
+|Typ|Attribute|Values|Description|
 |-|-|-|-|
-|img/div|data-default|fullview|Triggert Funktionalität|
-|img|src|string|URL des Bildes|
-|img|alt|string|Alternativtext des Bildes|
-|img|name|string|Name des Bildes|
-|div|data-fullview-alt|string|Alternativtext des Bildes|
-|div|data-fullview-name|string|Name des Bildes|
+|img/div|data-default|fullview|Triggers functionality|
+|img|src|string|URL of the image|
+|img|alt|string|Alternativ text of the image|
+|img|name|string|Name of the image|
+|div|data-fullview-alt|string|Alternativ text of the image|
+|div|data-fullview-name|string|Name of the image|
 
 ```html
 <img data-default="fullview" src="<IMAGE_URL>" alt="Test Message" name="Test">
@@ -119,13 +120,13 @@ Hiermit können Sie Bilder größer anzeigen lassen. Es ist möglich, diese Funk
 ```
 ---
 **Viewblock**
-Hiermit ist es möglich Bereiche anzugeben, welche auf- und eingeklappt werden können, sobald ein beliebiges Mitelement getriggert wird.
+This makes it possible to specify areas that can be expanded and collapsed as soon as any co-element is triggered.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|viewblock|Triggert Funktionalität|
-|data-viewblock-side|right/left|Gibt die Position des Symbols an|
-|data-viewblock|head/content|Gibt an um welchen Bereich es sich handeln soll|
+|data-default|viewblock|Triggers functionality|
+|data-viewblock-side|right/left|Specifies the position of the symbol|
+|data-viewblock|head/content|Specifies which area it should be|
 
 ```html
 <div data-default="viewblock" data-viewblock-side="left">
@@ -164,29 +165,29 @@ Hiermit ist es möglich Bereiche anzugeben, welche auf- und eingeklappt werden k
 ```
 ---
 **Tooltip**
-Hiermit kann man anpassbare Tooltips erstellen. Um korrekt funktionieren zu können, wird popper-2.6.0.js benötigt.
+This can be used to create customizable tooltips. In order to function correctly, popper-2.6.0.js is required.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|title|string|Gibt eine Zeichenkette an, welche angezeigt werden soll|
-|data-tooltip-placement|bottom/top/left/right|Gibt die Position des Tooltips an|
+|title|string|Specifies a string to be displayed|
+|data-tooltip-placement|bottom/top/left/right|Indicates the position of the tooltip|
 
 ```html
 <div style="height:500px;width:500px;background:red;" title="Test" data-title-placement="right"></div>
 ```
 ---
 **Sidebar**
-Hiermit kann man Sidebars erstellen, welche per Trigger von der Seite eingeschoben werden. Diese Positionieren sich selbst, außer man gibt spezielle Angaben an.
+This can be used to create sidebars that are pushed in from the side by triggering. These position themselves, unless you give special information.
 
-|Attribut|Wert|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|sidebar|Triggert Funktionalität|
-|data-sidebar|toggler/content|Definiert um welches Element es sich handelt|
-|data-sidebar-position|right/left/bottom/top|Gibt die Position der Sidebar an|
-|data-sidebar-trigger-type|mouseover/mousedown/click/hover|Gibt Trigger an|
-|data-sidebar-distance|top,bottom => left / left,right => top|Gibt direkte Distanz an|
-|data-sidebar-toggler-position|start/center/end|Angabe, wie der Toggler positioniert ist|
-|data-sidebar-state|shown|Kann man angeben, ob das Element bereits angezeigt wird (Funktioniert nicht bei hover-Elementen)|
+|data-default|sidebar|Triggers functionality|
+|data-sidebar|toggler/content|Defines which element is involved|
+|data-sidebar-position|right/left/bottom/top|Indicates the position of the sidebar|
+|data-sidebar-trigger-type|mouseover/mousedown/click/hover|Specifies triggers|
+|data-sidebar-distance|top,bottom => left / left,right => top|Indicates direct distance|
+|data-sidebar-toggler-position|start/center/end|Specification of how the toggler is positioned|
+|data-sidebar-state|shown|You can specify if the element is already displayed (does not work with hover elements)|
 
 ```html
 <div data-default="sidebar" data-sidebar-position="bottom" data-sidebar-distance="400" data-sidebar-state="shown">
@@ -206,13 +207,13 @@ Hiermit kann man Sidebars erstellen, welche per Trigger von der Seite eingeschob
 ```
 ---
 **Popup**
-Hiermit kann man Popups erstellen.
+This can be used to create popups.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|popup|Triggert Funktionalität|
-|data-popup|trigger/content|Gibt an um was es sich handelt|
-|data-popup-trigger-type|mousedown/mouseover/hover/click|Gibt den Trigger an
+|data-default|popup|Triggers functionality|
+|data-popup|trigger/content|Indicates what it is|
+|data-popup-trigger-type|mousedown/mouseover/hover/click|Specifies the trigger|
 
 ```html
 <div data-default="popup">
@@ -226,16 +227,16 @@ Hiermit kann man Popups erstellen.
 ```
 ---
 **Slider**
-Hiermit können Slider generiert werden. Um korrekt funktionieren zu können wird splide-2.4.20.css und splide.2.4.20.js benötigt.
+This can be used to generate sliders. In order to function correctly, splide-2.4.20.css and splide.2.4.20.js are required.
 
-|Attribut|Wert|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|slider|Triggert Funktionalität|
-|data-slider-arrow-style|rect/rounded|Gibt an welches Design für die Pfeile benutzt wird|
+|data-default|slider|Triggers functionality|
+|data-slider-arrow-style|rect/rounded|Specifies which design is used for the arrows|
 |data-slider-pagination-style|rect/rounded|Gibt an welches Design für die punktierte Anzeige genutzt wird|
-|data-slider-options|object|Gibt die Einstellungen mit (https://splidejs.com/options/)|
-|data-slider|item|Deklariert ein Item im Slider|
-|data-slider|sync|Benutzt eine andere Tabelle als Anzeige und Auswahl|
+|data-slider-options|object|Inckudes the settings (https://splidejs.com/options/)|
+|data-slider|item|Declares an item in the slider|
+|data-slider|sync|Uses a different table for display and selection|
 
 ```html
 <div id="testSlider" data-default="slider" data-slider="sync" style="width:100vw;" data-slider-options="{'type':'slide','direction':'ltr','fixedHeight':'49%','rewind':'true','autoplay':'true','interval':'1000'}" data-slider-arrow-style="rounded" data-slider-pagination-style="rounded">
@@ -255,11 +256,11 @@ Hiermit können Slider generiert werden. Um korrekt funktionieren zu können wir
 ```
 ---
 **Loader**
-Hiermit kann ein Loader definiert werden, welcher am Anfang der Seite eingeblendet ist.
+This can be used to define a loader that is displayed at the top of the page.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|loader|Triggert Funktionalität|
+|data-default|loader|Triggers functionality|
 
 ```html
 <div data-default="loader">
@@ -268,14 +269,14 @@ Hiermit kann ein Loader definiert werden, welcher am Anfang der Seite eingeblend
 ```
 ---
 **Filter**
-Ermöglicht es einen Filter zu generieren. Für jede angegebene Kategorie wird ein Filter-Element erstellt.
+Allows a filter to be generated. A filter element is created for each specified category.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|filter|Triggert Funktionalität|
-|data-filter-position|top/bottom/left/right|Gibt die Position der Filter-Elemente an|
-|data-filter|item|Gibt an, dass es sich um ein Element innerhalb des Filters handelt|
-|data-filter-categorie|string|Gibt die Kategorie des Elementes an|
+|data-default|filter|Triggers functionality|
+|data-filter-position|top/bottom/left/right|Indicates the position of the filter elements|
+|data-filter|item|Indicates that it is an element within the filter|
+|data-filter-categorie|string|Indicates the category of the element|
 
 ```html
 <div data-default="filter" data-filter-position="top">
@@ -291,13 +292,13 @@ Ermöglicht es einen Filter zu generieren. Für jede angegebene Kategorie wird e
 ```
 ---
 **Banner**
-Hiermit können Banner stellt werden. Falls mehrere erstellt werden, werden diese direkt positioniert.
+This can be used to place banners. If several are created, they are positioned directly.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|banner|Triggert Funktionalität|
-|data-banner-position|bottom/top|Gibt die Position des Banners an|
-|data-banner|close|Wenn angegeben, wird ein Close-Button erstellt|
+|data-default|banner|Triggers functionality|
+|data-banner-position|bottom/top|Specifies the position of the banner|
+|data-banner|close|If specified, a close button is created|
 
 ```html
 <div data-default="banner" data-banner-position="top">
@@ -307,11 +308,11 @@ Hiermit können Banner stellt werden. Falls mehrere erstellt werden, werden dies
 ```
 ---
 **Info**
-Hiermit kann man Informationseinblendungen erstellen. Diese sind kurz rechts sichtbar und geben einen angegeben Text wieder.
+This can be used to create information overlays. These are briefly visible on the right and reflect a specified text.
 
-|Attribut|Wert|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|info|Triggert Funktionalität|
+|data-default|info|Triggers functionality|
 
 ```html
 <div data-default="info">
@@ -320,56 +321,56 @@ Hiermit kann man Informationseinblendungen erstellen. Diese sind kurz rechts sic
 ```
 ---
 **Number**
-Hiermit kann man Number-Input-Felder anpassen.
+This can be used to customize number input fields.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|number|Triggert Funktionalität|
-|data-number-disabled-arrows|none/both/down/up|Gibt an welche Buttons deaktiviert werden|
-|min|integer|Gibt Startwert an, welcher nicht unterschritten werden kann|
-|max|integer|Gibt Maximalwert an, welcher nicht überschritten werden kann|
-|step|integer|Gibt Zahl an, welche immer addiert oder subtrahiert wird, sobald ein Button gedrückt wird|
+|data-default|number|Triggers functionality|
+|data-number-disabled-arrows|none/both/down/up|Specifies which buttons are deactivated|
+|min|integer|Indicates the start value which cannot be fallen below|
+|max|integer|Specifies the maximum value which cannot be exceeded|
+|step|integer|Specifies the number that is always added or subtracted as soon as a button is pressed|
 
 ```html
 <input type="number" data-default="number" data-number-disabled-arrows="up" min="2" max="12" step="4">
 ```
 ---
 **Radio**
-Hiermit kann man Radio-Button generieren.
+This can be used to generate radio buttons.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|radio|Triggert Funktionalität|
-|name|string|Gibt den namespace an, welche Radio-Buttons alle gleich sind|
+|data-default|radio|Triggers functionality|
+|name|string|Specifies the namespace of which radio buttons are all the same|
 
 ```html
 <input type="radio" name="test" data-default="radio">
 ```
 ---
 **File**
-Erstellt einen anpassbaren File-Uploader. Um die maximale Dateigröße angeben zu können, werden folgende Datentypen gestattet: B/b, KB/kb, MB/mb, GB/gb.
+Creates a customizable file uploader. In order to be able to specify the maximum file size, the following data types are permitted: B/b, KB/kb, MB/mb, GB/gb.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|file|Triggert Funktionalität|
-|data-file-max|string\|Datentyp|Gibt an wie groß die Datei/en maximal sein dürfen|
-|multiple|none|Gibt an, dass auch mehrere Dateien hochgeladen werden dürfen|
+|data-default|file|Triggers functionality|
+|data-file-max|string\|Datentyp|Specifies the maximum size of the file/s|
+|multiple|any|Specifies that multiple files can be uploaded|
 
 ```html
 <input type="file" data-default="file" data-file-max="19.83kb">
 ```
 ---
 **Period**
-Hiermit können Zeitstempel erstellt werden.
+This can be used to create time stamps.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|period|Triggert Funktionalität|
-|data-period-start|point/path|Gibt an, wie der Start gehandhabt wird|
-|data-period-end|point/path|Gibt an, wie das Ende gehandhabt wird|
-|data-period|stamp|Gibt an, dass es sich um einen Zeitstempel handelt|
-|data-period-position|left/right|Gibt die Position des Zeitstempels an|
-|data-period|date/heading/content|Ermöglicht es Kontent festzulegen|
+|data-default|period|Triggers functionality|
+|data-period-start|point/path|Indicates how the startup is handled|
+|data-period-end|point/path|Indicates wow the end is handled|
+|data-period|stamp|Indicates that this is a timestamp|
+|data-period-position|left/right|Indicates the position of the timestamp|
+|data-period|date/heading/content|Allows you to define the content|
 
 ```html
 <div data-default="period" data-period-start="path" data-period-end="point" style="width:800px;">
@@ -391,14 +392,14 @@ Hiermit können Zeitstempel erstellt werden.
 ```
 ---
 **Navigation**
-Hiermit kann man eine Navigation erstellen. Es ist nur möglich eine Navigation zu erstellen.
+This can be used to create a navigation. It is only possible to create a navigation.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|navigation|Triggert Funktionalität|
-|data-navigation-type|fixed/static|Gibt an, ob die Navigation beim scrollen mitgeht|
-|data-navigation-work|fade/none|Gibt an, ob beim scrollen faded oder gleich bleibt|
-|data-navigation|logo/items|Gibt verschiedene Bereiche an|
+|data-default|navigation|Triggers functionality|
+|data-navigation-type|fixed/static|Indicates whether the navigation follows when scrolling|
+|data-navigation-work|fade/none|Specifies whether scrolling is faded or remains the same|
+|data-navigation|logo/items|Indicates different areas|
 
 ```html
 <nav data-default="navigation" data-navigation-type="fixed" data-navigation-work="fade">
@@ -416,12 +417,12 @@ Hiermit kann man eine Navigation erstellen. Es ist nur möglich eine Navigation 
 ```
 ---
 **Footer**
-Hiermit kann man einen Footer erstellen. Mit einem weiteren Footer-Element innerhalb des Footers kann man Verweislinks hinzufügen, welchen zentriert ausgerichtet werden. Gibt man im Script-Bereich der Seite die Variable footermsg an, kann man dort den Footertext bearbeiten.
+This can be used to create a footer. With another footer element within the footer, you can add reference links which are centered. If you enter the variable footermsg in the script area of the page, you can edit the footer text there.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|footer|Triggert Funktionalität|
-|data-footer|content|Gibt den Kontent an|
+|data-default|footer|Triggers functionality|
+|data-footer|content|Specifies the content|
 
 ```html
 <footer data-default="footer">
@@ -445,12 +446,12 @@ Hiermit kann man einen Footer erstellen. Mit einem weiteren Footer-Element inner
 ```
 ---
 **List**
-Hiermit kann man Listen generieren, welche per Dropdown ein Element auswählen lässt.
+This can be used to generate lists that can be used to select an element via dropdown.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|list|Triggert Funktionalität|
-|data-list-use|integer|Gibt die ID des datalist-Elements an|
+|data-default|list|Triggers functionality|
+|data-list-use|integer|Specifies the ID of the datalist element|
 
 ```html
 <datalist id="dataList-Test">
@@ -464,16 +465,16 @@ Hiermit kann man Listen generieren, welche per Dropdown ein Element auswählen l
 ```
 ---
 **Section**
-Hiermit ist es möglich Sektionen zu erstellen.
+This makes it possible to create sections.
 
-|Attribut|Werte|Beschreibung|
+|Attribute|Values|Description|
 |-|-|-|
-|data-default|section|Triggert Funktionalität|
-|data-section-heading|string|Gibt die Überschrift an|
-|data-section-heading-position|left/middle/right|Gibt die Position der Überschrift an|
-|data-section-wave|false/true|Gibt an, ob ein Übergang der Sektionen vorhanden sein soll|
-|data-section-wave-color|string|Gibt die Farbe des Übergangs an|
-|data-section-style|light/dark|Gibt die Farbe der Sektion an|
+|data-default|section|Triggers functionality|
+|data-section-heading|string|Specifies the heading|
+|data-section-heading-position|left/middle/right|Indicates the position of the heading|
+|data-section-wave|false/true|Specifies whether there should be a transition between the sections|
+|data-section-wave-color|string|Specifies the color of the transition|
+|data-section-style|light/dark|Specifies the color of the section|
 
 ```html
 <div data-default="section" data-section-heading="test heading" data-section-heading-position="left" data-section-wave="true" data-section-style="dark"></div>
