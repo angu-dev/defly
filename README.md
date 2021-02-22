@@ -26,9 +26,11 @@ Among other things, you can create the following elements:
 
 ## Branches:
 **main:** 
+
 Here you will find the minified code of the latest version.
 
 **dev:**
+
 Here you will find the original code of the latest version.
 
 ## Files:
@@ -74,6 +76,7 @@ All design settings are included here. Each element that can be generated has a 
 Here you will find all the necessary information about each item included in defly.
 
 **Select**
+
 If the browser is not Safari or Google Chrome (Mobile), you can create this element. If an option element contained therein has the value -1, this is a placeholder.
 
 |Attribute|Values|Description|
@@ -83,15 +86,16 @@ If the browser is not Safari or Google Chrome (Mobile), you can create this elem
 
 ```html
 <select data-default="select"> <!-- data-select-index="2" -->
-	<option value="-1">test</option>
-	<option value="index0">Test 4</option>
-	<option value="1">Test 5</option>
-	<option value="2">Test 6</option>
-	<option value="3">Test 7</option>
+   <option value="-1">test</option>
+   <option value="index0">Test 4</option>
+   <option value="1">Test 5</option>
+   <option value="2">Test 6</option>
+   <option value="3">Test 7</option>
 </select>
 ```
 ---
 **Checkbox**
+
 This allows you to create a customizable checkbox.
 
 |Attribute|Values|Description|
@@ -103,6 +107,7 @@ This allows you to create a customizable checkbox.
 ```
 ---
 **Fullview**
+
 This allows you to display images larger. It is possible to use this function on IMG or DIV elements. In the case of DIV elements, the image must be specified as a background image.
 
 |Typ|Attribute|Values|Description|
@@ -120,6 +125,7 @@ This allows you to display images larger. It is possible to use this function on
 ```
 ---
 **Viewblock**
+
 This makes it possible to specify areas that can be expanded and collapsed as soon as any co-element is triggered.
 
 |Attribute|Values|Description|
@@ -130,41 +136,40 @@ This makes it possible to specify areas that can be expanded and collapsed as so
 
 ```html
 <div data-default="viewblock" data-viewblock-side="left">
-	<div>
-		<div data-viewblock="head">
-			<div>test</div>
-			<p>test</p>
-			<div>
-				<div>
-					<p>testtest</p>
-				</div>
-			</div>
-		</div>
-		<div data-viewblock="content">Kontext Test</div>
-	</div>
-	<div>
-		<div data-viewblock="head">TestTestTestTest Test</div>
-		<div data-viewblock="content">Kontext testtesttesttest testtesttest test</div>
-	</div>
-	<div>
-		<div data-viewblock="head">Test Test</div>
-		<div data-viewblock="content">
-			<div>
-				<div>
-					<p>test test test test</p>
-					<div>
-						<div>
-							test
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+   <div>
+      <div data-viewblock="head">
+         <div>test</div>
+	 <p>test</p>
+	 <div>
+	    <div>
+	       <p>testtest</p>
+	    </div>
+	 </div>
+      </div>
+      <div data-viewblock="content">Kontext Test</div>
+   </div>
+   <div>
+      <div data-viewblock="head">TestTestTestTest Test</div>
+      <div data-viewblock="content">Kontext testtesttesttest testtesttest test</div>
+   </div>
+   <div>
+      <div data-viewblock="head">Test Test</div>
+      <div data-viewblock="content">
+         <div>
+	    <div>
+	       <p>test test test test</p>
+	       <div>
+	          <div>test</div>
+	       </div>
+	    </div>
+	  </div>
+       </div>
+   </div>
 </div>
 ```
 ---
 **Tooltip**
+
 This can be used to create customizable tooltips. In order to function correctly, popper-2.6.0.js is required.
 
 |Attribute|Values|Description|
@@ -177,6 +182,7 @@ This can be used to create customizable tooltips. In order to function correctly
 ```
 ---
 **Sidebar**
+
 This can be used to create sidebars that are pushed in from the side by triggering. These position themselves, unless you give special information.
 
 |Attribute|Values|Description|
@@ -191,22 +197,23 @@ This can be used to create sidebars that are pushed in from the side by triggeri
 
 ```html
 <div data-default="sidebar" data-sidebar-position="bottom" data-sidebar-distance="400" data-sidebar-state="shown">
-	<div data-sidebar="toggler" data-sidebar-toggler-position="center" data-sidebar-trigger-type="hover">
-		<div>
-			<div>
-				test
-				<p>test</p>
-				<p>test</p>
-			</div>
-		</div>
-	</div>
-	<div data-sidebar="content">
-		<div style="height:700px;width:300px;background-color:blue;"></div>
-	</div>
+   <div data-sidebar="toggler" data-sidebar-toggler-position="center" data-sidebar-trigger-type="hover">
+      <div>
+	 <div>
+	     test
+	     <p>test</p>
+	     <p>test</p>
+	 </div>
+      </div>
+   </div>
+   <div data-sidebar="content">
+      <div style="height:700px;width:300px;background-color:blue;"></div>
+   </div>
 </div>
 ```
 ---
 **Popup**
+
 This can be used to create popups.
 
 |Attribute|Values|Description|
@@ -227,6 +234,7 @@ This can be used to create popups.
 ```
 ---
 **Slider**
+
 This can be used to generate sliders. In order to function correctly, splide-2.4.20.css and splide.2.4.20.js are required.
 
 |Attribute|Values|Description|
@@ -256,6 +264,7 @@ This can be used to generate sliders. In order to function correctly, splide-2.4
 ```
 ---
 **Loader**
+
 This can be used to define a loader that is displayed at the top of the page.
 
 |Attribute|Values|Description|
@@ -269,6 +278,7 @@ This can be used to define a loader that is displayed at the top of the page.
 ```
 ---
 **Filter**
+
 Allows a filter to be generated. A filter element is created for each specified category.
 
 |Attribute|Values|Description|
@@ -292,6 +302,7 @@ Allows a filter to be generated. A filter element is created for each specified 
 ```
 ---
 **Banner**
+
 This can be used to place banners. If several are created, they are positioned directly.
 
 |Attribute|Values|Description|
@@ -308,6 +319,7 @@ This can be used to place banners. If several are created, they are positioned d
 ```
 ---
 **Info**
+
 This can be used to create information overlays. These are briefly visible on the right and reflect a specified text.
 
 |Attribute|Values|Description|
@@ -321,6 +333,7 @@ This can be used to create information overlays. These are briefly visible on th
 ```
 ---
 **Number**
+
 This can be used to customize number input fields.
 
 |Attribute|Values|Description|
@@ -336,6 +349,7 @@ This can be used to customize number input fields.
 ```
 ---
 **Radio**
+
 This can be used to generate radio buttons.
 
 |Attribute|Values|Description|
@@ -348,6 +362,7 @@ This can be used to generate radio buttons.
 ```
 ---
 **File**
+
 Creates a customizable file uploader. In order to be able to specify the maximum file size, the following data types are permitted: B/b, KB/kb, MB/mb, GB/gb.
 
 |Attribute|Values|Description|
@@ -361,6 +376,7 @@ Creates a customizable file uploader. In order to be able to specify the maximum
 ```
 ---
 **Period**
+
 This can be used to create time stamps.
 
 |Attribute|Values|Description|
@@ -392,6 +408,7 @@ This can be used to create time stamps.
 ```
 ---
 **Navigation**
+
 This can be used to create a navigation. It is only possible to create a navigation.
 
 |Attribute|Values|Description|
@@ -417,6 +434,7 @@ This can be used to create a navigation. It is only possible to create a navigat
 ```
 ---
 **Footer**
+
 This can be used to create a footer. With another footer element within the footer, you can add reference links which are centered. If you enter the variable footermsg in the script area of the page, you can edit the footer text there.
 
 |Attribute|Values|Description|
@@ -446,6 +464,7 @@ This can be used to create a footer. With another footer element within the foot
 ```
 ---
 **List**
+
 This can be used to generate lists that can be used to select an element via dropdown.
 
 |Attribute|Values|Description|
@@ -455,16 +474,17 @@ This can be used to generate lists that can be used to select an element via dro
 
 ```html
 <datalist id="dataList-Test">
-	<option value="187"></option>
-	<option value="2"></option>
-	<option value="3"></option>
-	<option value="4"></option>
-	<option value="5"></option>
-	<option value="6"></option>
+   <option value="187"></option>
+   <option value="2"></option>
+   <option value="3"></option>
+   <option value="4"></option>
+   <option value="5"></option>
+   <option value="6"></option>
 </datalist>
 ```
 ---
 **Section**
+
 This makes it possible to create sections.
 
 |Attribute|Values|Description|
