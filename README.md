@@ -170,7 +170,7 @@ This makes it possible to specify areas that can be expanded and collapsed as so
 ---
 **Tooltip**
 
-This can be used to create customizable tooltips. In order to function correctly, popper-2.6.0.js is required.
+This can be used to create customizable tooltips. In order to work correctly, popper-2.6.0.js is required.
 
 |Attribute|Values|Description|
 |-|-|-|
@@ -235,7 +235,7 @@ This can be used to create popups.
 ---
 **Slider**
 
-This can be used to generate sliders. In order to function correctly, splide-2.4.20.css and splide.2.4.20.js are required.
+This can be used to generate sliders. In order to work correctly, splide-2.4.20.css and splide.2.4.20.js are required.
 
 |Attribute|Values|Description|
 |-|-|-|
@@ -409,7 +409,7 @@ This can be used to create time stamps.
 ---
 **Navigation**
 
-This can be used to create a navigation. It is only possible to create a navigation.
+This can be used to create a navigation. It is only possible to create one navigation.
 
 |Attribute|Values|Description|
 |-|-|-|
