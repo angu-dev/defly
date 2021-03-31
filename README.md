@@ -72,7 +72,7 @@ This file contains most of the logic of the project. You can find the complete J
 **"default-style.css"-File:**
 All design settings are included here. Each element that can be generated has a default style that can be revised at any time.
 
-## Erklärung:
+## Explanation:
 Here you will find all the necessary information about each item included in defly.
 
 **Select**
